@@ -584,4 +584,290 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
             "Gannondorf",
         ],
     ),
+    (
+        "Kirby’s Dream Land",
+        "Kirby",
+        1992,
+        [
+            "Kirby",
+            "King Dedede",  # main villain
+        ],
+    ),
+    (
+        "Kirby’s Adventure",
+        "Kirby",
+        1993,
+        [
+            "Kirby",
+            "King Dedede",
+            "Nightmare",
+            "Meta Knight",  # rival, not playable
+        ],
+    ),
+    (
+        "Kirby’s Dream Land 2",
+        "Kirby",
+        1995,
+        [
+            "Kirby",
+            "Rick",  # second player (animal friend)
+            "Kine",
+            "Coo",
+            "King Dedede",
+            "Dark Matter",
+        ],
+    ),
+    (
+        "Kirby’s Dream Land 3",
+        "Kirby",
+        1997,
+        [
+            "Kirby",
+            "Gooey",  # second player in co-op
+            "Rick",
+            "Kine",
+            "Coo",
+            "Nago",
+            "Pitch",
+            "ChuChu",
+            "King Dedede",
+            "Dark Matter",
+            "Zero",
+        ],
+    ),
+    (
+        "Kirby 64: The Crystal Shards",
+        "Kirby",
+        2000,
+        [
+            "Kirby",
+            "King Dedede",  # temporarily playable as second character
+            "Adeleine",
+            "Ribbon",
+            "Zero-Two",
+        ],
+    ),
+    (
+        "Kirby & the Amazing Mirror",
+        "Kirby",
+        2004,
+        [
+            "Kirby",  # up to 4 Kirbys (multiplayer clones)
+            "Dark Meta Knight",
+            "Dark Mind",
+            "Meta Knight",
+        ],
+    ),
+    (
+        "Kirby: Canvas Curse",
+        "Kirby",
+        2005,
+        [
+            "Kirby",
+            "Drawcia",
+        ],
+    ),
+    (
+        "Kirby: Squeak Squad",
+        "Kirby",
+        2006,
+        [
+            "Kirby",
+            "Daroach",
+            "Dark Nebula",
+        ],
+    ),
+    (
+        "Kirby’s Return to Dream Land",
+        "Kirby",
+        2011,
+        [
+            "Kirby",
+            "King Dedede",  # 2nd player option
+            "Meta Knight",  # 3rd player option
+            "Bandana Waddle Dee",  # 4th player option
+            "Magolor",  # ally turned villain
+            "Landia",
+        ],
+    ),
+    (
+        "Kirby: Triple Deluxe",
+        "Kirby",
+        2014,
+        [
+            "Kirby",
+            "King Dedede",  # playable in Dedede Tour mode
+            "Queen Sectonia",
+            "Taranza",
+        ],
+    ),
+    (
+        "Kirby and the Rainbow Curse",
+        "Kirby",
+        2015,
+        [
+            "Kirby",
+            "Bandana Waddle Dee",  # 2nd player in co-op
+            "Claycia",
+            "Dark Crafter",
+        ],
+    ),
+    (
+        "Kirby: Planet Robobot",
+        "Kirby",
+        2016,
+        [
+            "Kirby",
+            "Susie",  # major character
+            "Star Dream",  # main villain
+            "Meta Knight",  # playable in Meta Knightmare Returns
+        ],
+    ),
+    (
+        "Kirby Star Allies",
+        "Kirby",
+        2018,
+        [
+            "Kirby",
+            "King Dedede",  # can join as Dream Friend
+            "Meta Knight",
+            "Bandana Waddle Dee",
+            "Hyness",
+            "Void Termina",
+        ],
+    ),
+    (
+        "Kirby and the Forgotten Land",
+        "Kirby",
+        2022,
+        [
+            "Kirby",
+            "Bandana Waddle Dee",  # 2nd player co-op
+            "Elfilin",
+            "King Dedede",
+            "Leongar",  # major Beast Pack leader
+            "Fecto Forgo",  # final boss / fused entity
+        ],
+    ),
+        (
+        "Super Mario Bros.",
+        "Super Mario",
+        1985,
+        [
+            "Mario",  # playable
+            "Luigi",  # playable (in 2-player mode)
+            "Bowser",  # main villain
+            "False Bowser",  # boss (the fake Bowser at the end of worlds 1-7) :contentReference[oaicite:0]{index=0}
+        ],
+    ),
+    (
+        "Super Mario Bros. 2",  # USA version (not the ’Lost Levels’)
+        "Super Mario",
+        1988,
+        [
+            "Mario",
+            "Luigi",
+            "Princess Peach",  # playable
+            "Toad",  # playable
+            "King Wart",  # main villain boss :contentReference[oaicite:1]{index=1}
+            "Birdo",  # recurring boss/boss fight :contentReference[oaicite:2]{index=2}
+            "Mouser", "Triclyde", "Fry Guy", "Clawgrip"  # bosses in various levels :contentReference[oaicite:3]{index=3}
+        ],
+    ),
+    (
+        "Super Mario Bros. 3",
+        "Super Mario",
+        1990,
+        [
+            "Mario",
+            "Luigi",
+            "Bowser",  # main villain
+            "The Koopalings",  # all Koopalings appearing as bosses :contentReference[oaicite:4]{index=4}
+            "Boom Boom",  # recurring boss in some fortress or sub‐boss roles :contentReference[oaicite:5]{index=5}
+        ],
+    ),
+    (
+        "Super Mario World",
+        "Super Mario",
+        1990,
+        [
+            "Mario",
+            "Luigi",
+            "Bowser",
+            "The Koopalings",  # again grouped :contentReference[oaicite:6]{index=6}
+            "Reznor",  # boss in fortresses :contentReference[oaicite:7]{index=7}
+            "Big Boo"  # boss (Big Boo’s Haunt etc.) :contentReference[oaicite:8]{index=8}
+        ],
+    ),
+    (
+        "Super Mario 64",
+        "Super Mario",
+        1996,
+        [
+            "Mario",  # only playable
+            "Bowser",
+            "King Bob-omb",  # boss
+            "Whomp King",
+            "Big Boo",
+            "Big Bully",
+            "Eyerok",
+            "Wiggler",  # etc. :contentReference[oaicite:9]{index=9}
+        ],
+    ),
+    (
+        "Super Mario Sunshine",
+        "Super Mario",
+        2002,
+        [
+            "Mario",
+            "Bowser",  # main villain
+            "Bowser Jr.",  # significant boss fight (but note: not grouped among Koopalings) :contentReference[oaicite:10]{index=10}
+            "Petey Piranha",
+            "Gooper Blooper",
+            "Shadow Mario",
+            "Mecha Bowser",  # etc. :contentReference[oaicite:11]{index=11}
+        ],
+    ),
+    (
+        "New Super Mario Bros. U",
+        "Super Mario",
+        2012,
+        [
+            "Mario",
+            "Luigi",
+            "Toad",
+            "Bowser",
+            "Bowser Jr.",  # as separate boss
+            "The Koopalings",
+            "Boom Boom",
+            "Kamek",  # boss magic character etc. :contentReference[oaicite:12]{index=12}
+        ],
+    ),
+    (
+        "Super Mario Galaxy",
+        "Super Mario",
+        2007,
+        [
+            "Mario",
+            "Bowser",
+            "Bowser Jr.",  # appears in boss fights :contentReference[oaicite:13]{index=13}
+            "King Kaliente",
+            "Taranto x", "Megaleg", "Bugaboom",  # sample bosses etc. :contentReference[oaicite:14]{index=14}
+        ],
+    ),
+    (
+        "Super Mario Odyssey",
+        "Super Mario",
+        2017,
+        [
+            "Mario",
+            "Bowser",
+            "Madame Broode & Chain Chompikins",  # boss fight
+            "Topper",
+            "Rango",
+            "Harriet",
+            "Knucklotec",
+            "Spewart",  # etc. :contentReference[oaicite:15]{index=15}
+        ],
+    ),
 ]
