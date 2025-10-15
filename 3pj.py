@@ -18,7 +18,7 @@
 # bye
 
 #  Include the movie database, named movie_db
-from movies import movie_db
+from games import game_db
 from match import match
 from typing import List, Tuple, Callable, Any
 
@@ -27,7 +27,7 @@ def get_title(movie: Tuple[str, str, int, List[str]]) -> str:
     return movie[0]
 
 
-def get_director(movie: Tuple[str, str, int, List[str]]) -> str:
+def get_series(movie: Tuple[str, str, int, List[str]]) -> str:
     return movie[1]
 
 
@@ -35,7 +35,7 @@ def get_year(movie: Tuple[str, str, int, List[str]]) -> int:
     return movie[2]
 
 
-def get_actors(movie: Tuple[str, str, int, List[str]]) -> List[str]:
+def get_characters(movie: Tuple[str, str, int, List[str]]) -> List[str]:
     return movie[3]
 
 
@@ -54,7 +54,13 @@ def title_by_year(matches: List[str]) -> List[str]:
     Returns:
         a list of movie titles made in the passed in year
     """
-    pass
+    year = int(matches[0])
+    result = []
+    print(year)
+    for game in game_db:
+        if get_year(game) == year:
+            result.append(get_title(game))
+    return result
 
 
 def title_by_year_range(matches: List[str]) -> List[str]:
@@ -70,7 +76,14 @@ def title_by_year_range(matches: List[str]) -> List[str]:
         a list of movie titles made during those years, inclusive (meaning if you pass
         in ["1991", "1994"] you will get movies made in 1991, 1992, 1993 & 1994)
     """
-    pass
+    year1 = int(matches[0])
+    year2 = int(matches[1])
+    result = []
+    for game in game_db:
+        if get_year(game) < year1:
+            if get_year(game) > year2;
+                result.append(get_title(game))
+    return result
 
 
 def title_before_year(matches: List[str]) -> List[str]:
@@ -84,7 +97,12 @@ def title_before_year(matches: List[str]) -> List[str]:
         a list of movie titles made before the passed in year, exclusive (meaning if you
         pass in 1992 you won't get any movies made that year, only before)
     """
-    pass
+    year = int(matches[0])
+    result = []
+    for game in game_db:
+        if get_year(game) < year:
+            result.append(get_title(game))
+    return result
 
 
 def title_after_year(matches: List[str]) -> List[str]:
@@ -98,10 +116,15 @@ def title_after_year(matches: List[str]) -> List[str]:
         a list of movie titles made after the passed in year, exclusive (meaning if you
         pass in 1992 you won't get any movies made that year, only after)
     """
-    pass
+    year = int(matches[0])
+    result = []
+    for game in game_db:
+        if get_year(game) > year:
+            result.append(get_title(game))
+    return result
 
 
-def director_by_title(matches: List[str]) -> List[str]:
+def series_by_title(matches: List[str]) -> List[str]:
     """Finds director of movie based on title
 
     Args:
@@ -110,10 +133,15 @@ def director_by_title(matches: List[str]) -> List[str]:
     Returns:
         a list of 1 string, the director of the movie
     """
-    pass
+    title = matches[0]
+    result = []
+    for game in game_db:
+        if get_title(game) == title:
+            result.append(get_series(game))
+    return result
 
 
-def title_by_director(matches: List[str]) -> List[str]:
+def title_by_series(matches: List[str]) -> List[str]:
     """Finds movies directed by the passed in director
 
     Args:
@@ -122,10 +150,15 @@ def title_by_director(matches: List[str]) -> List[str]:
     Returns:
         a list of movies titles directed by the passed in director
     """
-    pass
+    series = matches[0]
+    result = []
+    for game in game_db:
+        if get_series(game) == series:
+            result.append(get_title(game))
+    return result
 
 
-def actors_by_title(matches: List[str]) -> List[str]:
+def characters_by_title(matches: List[str]) -> List[str]:
     """Finds actors who acted in the passed in movie title
 
     Args:
@@ -134,7 +167,12 @@ def actors_by_title(matches: List[str]) -> List[str]:
     Returns:
         a list of actors who acted in the passed in title
     """
-    pass
+    title = matches[0]
+    result = []
+    for game in game_db:
+        if get_title(game) == title:
+            result.append(get_characters(game))
+    return result
 
 
 def year_by_title(matches: List[str]) -> List[int]:
@@ -146,10 +184,15 @@ def year_by_title(matches: List[str]) -> List[int]:
     Returns:
         a list of one item (an int), the year that the movie was made
     """
-    pass
+    title = matches[0]
+    result = []
+    for game in game_db:
+        if get_title(game) == title:
+            result.append(get_title(game))
+    return result
 
 
-def title_by_actor(matches: List[str]) -> List[str]:
+def title_by_character(matches: List[str]) -> List[str]:
     """Finds titles of all movies that the given actor was in
 
     Args:
@@ -158,7 +201,12 @@ def title_by_actor(matches: List[str]) -> List[str]:
     Returns:
         a list of movie titles that the actor acted in
     """
-    pass
+    character = matches[0]
+    result = []
+    for game in game_db:
+        if get_characters(game) == character:
+            result.append(get_title(game))
+    return result
 
 
 # dummy argument is ignored and doesn't matter
