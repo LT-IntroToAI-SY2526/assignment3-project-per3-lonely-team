@@ -1,23 +1,4 @@
-# Important variables:
-#     movie_db: list of 4-tuples (imported from movies.py)
-#     pa_list: list of pattern-action pairs (queries)
-#       pattern - strings with % and _ (not consecutive)
-#       action  - return list of strings
 
-# THINGS TO ASK THE MOVIE CHAT BOT:
-# what movies were made in _ (must be date, because we don't have location)
-# what movies were made between _ and _
-# what movies were made before _
-# what movies were made after _
-# who directed %
-# who was the director of %
-# what movies were directed by %
-# who acted in %
-# when was % made
-# in what movies did % appear
-# bye
-
-#  Include the movie database, named movie_db
 from games import game_db
 from match import match
 from typing import List, Tuple, Callable, Any
