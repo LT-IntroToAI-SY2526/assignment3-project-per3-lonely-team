@@ -217,18 +217,18 @@ def bye_action(dummy: List[str]) -> None:
 # The pattern-action list for the natural language query system A list of tuples of
 # pattern and action It must be declared here, after all of the function definitions
 pa_list: List[Tuple[List[str], Callable[[List[str]], List[Any]]]] = [
-    (str.split("what movies were made in _"), title_by_year),
-    (str.split("what movies were made between _ and _"), title_by_year_range),
-    (str.split("what movies were made before _"), title_before_year),
-    (str.split("what movies were made after _"), title_after_year),
+    (str.split("what games were made in _"), title_by_year),
+    (str.split("what games were made between _ and _"), title_by_year_range),
+    (str.split("what games were made before _"), title_before_year),
+    (str.split("what games were made after _"), title_after_year),
     # note there are two valid patterns here two different ways to ask for the director
     # of a movie
-    (str.split("who directed %"), director_by_title),
-    (str.split("who was the director of %"), director_by_title),
-    (str.split("what movies were directed by %"), title_by_director),
-    (str.split("who acted in %"), actors_by_title),
+    (str.split("what was in the series, %"), series_by_title),
+    (str.split("what is the series of %"), series_by_title),
+    (str.split("what games were in the series, %"), title_by_series),
+    (str.split("what characters where in %"), characters_by_title),
     (str.split("when was % made"), year_by_title),
-    (str.split("in what movies did % appear"), title_by_actor),
+    (str.split("in what games did % appear"), title_by_character),
     (["bye"], bye_action),
 ]
 
@@ -245,7 +245,14 @@ def search_pa_list(src: List[str]) -> List[str]:
         a list of answers. Will be ["I don't understand"] if it finds no matches and
         ["No answers"] if it finds a match but no answers
     """
-    pass
+    for pat, act in pa_list:
+        mat = match(pat, src)
+
+        if mat is not None:
+            answer = act(mat)
+            return answer if answer else ["No answers"]
+        
+    return ["I don't understand"]
 
 
 def query_loop() -> None:
@@ -274,20 +281,20 @@ def query_loop() -> None:
 
 if __name__ == "__main__":
     assert isinstance(title_by_year(["1974"]), list), "title_by_year not returning a list"
-    assert sorted(title_by_year(["1974"])) == sorted(
-        ["amarcord", "chinatown"]
+    assert sorted(title_by_year(["1996"])) == sorted(
+        ["Pokemon Red", "Pokemon Blue", "Super Mario 64"]
     ), "failed title_by_year test"
-    assert isinstance(title_by_year_range(["1970", "1972"]), list), "title_by_year_range not returning a list"
-    assert sorted(title_by_year_range(["1970", "1972"])) == sorted(
-        ["the godfather", "johnny got his gun"]
+    assert isinstance(title_by_year_range(["1996", "1998"]), list), "title_by_year_range not returning a list"
+    assert sorted(title_by_year_range(["1996", "1998"])) == sorted(
+        ["Pokemon Red", "Pokemon Blue", "Super Mario 64","Kirby Dream Land 3","Pokemon Yellow","Legend Of Zelda: Ocacrina of Time"]
     ), "failed title_by_year_range test"
-    assert isinstance(title_before_year(["1950"]), list), "title_before_year not returning a list"
-    assert sorted(title_before_year(["1950"])) == sorted(
-        ["casablanca", "citizen kane", "gone with the wind", "metropolis"]
+    assert isinstance(title_before_year(["1989"]), list), "title_before_year not returning a list"
+    assert sorted(title_before_year(["1989"])) == sorted(
+        ["Super Mario Bros. 2","The Legend of Zelda: The Adventure of Link","The Legend of Zelda","Super Mario Bros."]
     ), "failed title_before_year test"
-    assert isinstance(title_after_year(["1990"]), list), "title_after_year not returning a list"
-    assert sorted(title_after_year(["1990"])) == sorted(
-        ["boyz n the hood", "dead again", "the crying game", "flirting", "malcolm x"]
+    assert isinstance(title_after_year(["2021"]), list), "title_after_year not returning a list"
+    assert sorted(title_after_year(["2021"])) == sorted(
+        ["Pokemon Legends: Arceus","Pokemon Scarlet","Pokemon Violet","Kirby and the Forgotten Land","Tears of The Kingdom]
     ), "failed title_after_year test"
     assert isinstance(director_by_title(["jaws"]), list), "director_by_title not returning a list"
     assert sorted(director_by_title(["jaws"])) == sorted(
