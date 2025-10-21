@@ -296,43 +296,43 @@ if __name__ == "__main__":
     assert sorted(title_after_year(["2021"])) == sorted(
         ["Pokemon Legends: Arceus","Pokemon Scarlet","Pokemon Violet","Kirby and the Forgotten Land","Tears of The Kingdom]
     ), "failed title_after_year test"
-    assert isinstance(director_by_title(["jaws"]), list), "director_by_title not returning a list"
-    assert sorted(director_by_title(["jaws"])) == sorted(
-        ["steven spielberg"]
-    ), "failed director_by_title test"
-    assert isinstance(title_by_director(["steven spielberg"]), list), "title_by_director not returning a list"
-    assert sorted(title_by_director(["steven spielberg"])) == sorted(
-        ["jaws"]
-    ), "failed title_by_director test"
-    assert isinstance(actors_by_title(["jaws"]), list), "actors_by_title not returning a list"
-    assert sorted(actors_by_title(["jaws"])) == sorted(
+    assert isinstance(series_by_title(["Pokemon Red"]), list), "series_by_title not returning a list"
+    assert sorted(series_by_title(["Pokemon Red"])) == sorted(
+        ["Pokemon"]
+    ), "failed series_by_title test"
+    assert isinstance(title_by_series(["steven spielberg"]), list), "title_by_series not returning a list"
+    assert sorted(title_by_series(["steven spielberg"])) == sorted(
+        ["Pokemon Red", "Pokemon Blue", "Pokemon Yellow", "and so on"]
+    ), "failed title_by_series test"
+    assert isinstance(characters_by_title(["Pokemon Red"]), list), "characters_by_title not returning a list"
+    assert sorted(characters_by_title(["Pokemon Red"])) == sorted(
         [
-            "roy scheider",
-            "robert shaw",
-            "richard dreyfuss",
-            "lorraine gary",
-            "murray hamilton",
+            "Red",
+            "Blue",
+            "Prof. Oark",
+            "Giovanni",
+            "Charizard",
         ]
-    ), "failed actors_by_title test"
-    assert sorted(actors_by_title(["movie not in database"])) == [], "failed actors_by_title not in database test"
-    assert isinstance(year_by_title(["jaws"]), list), "year_by_title not returning a list"
-    assert sorted(year_by_title(["jaws"])) == sorted(
-        [1975]
+    ), "failed characters_by_title test"
+    assert sorted(characters_by_title(["game not in database"])) == [], "failed characters_by_title not in database test"
+    assert isinstance(year_by_title(["Pokemon Red"]), list), "year_by_title not returning a list"
+    assert sorted(year_by_title(["Pokemon Red"])) == sorted(
+        [1996]
     ), "failed year_by_title test"
-    assert isinstance(title_by_actor(["orson welles"]), list), "title_by_actor not returning a list"
-    assert sorted(title_by_actor(["orson welles"])) == sorted(
-        ["citizen kane", "othello"]
-    ), "failed title_by_actor test"
+    assert isinstance(title_by_character(["Red"]), list), "title_by_character not returning a list"
+    assert sorted(title_by_actor(["Red"])) == sorted(
+        ["Pokemon Red", "Pokemon Blue"]
+    ), "failed title_by_character test"
     
     
     assert sorted(search_pa_list(["hi", "there"])) == sorted(
         ["I don't understand"]
     ), "failed search_pa_list test 1"
-    assert sorted(search_pa_list(["who", "directed", "jaws"])) == sorted(
-        ["steven spielberg"]
+    assert sorted(search_pa_list(["what", "series","is", "Pokemon Red"])) == sorted(
+        ["Pokemon"]
     ), "failed search_pa_list test 2"
     assert sorted(
-        search_pa_list(["what", "movies", "were", "made", "in", "2020"])
+        search_pa_list(["what", "games", "were", "made", "in", "2020"])
     ) == sorted(["No answers"]), "failed search_pa_list test 3"
 
     print("All tests passed!")
