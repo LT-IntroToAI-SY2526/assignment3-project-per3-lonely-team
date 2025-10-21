@@ -386,7 +386,7 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         [
             "Zelda",
             "Link",
-            "Impa",  # First NPC you meet in towns who guides you
+            "Impa",  
             "Dark Link",
         ],
     ),
@@ -397,7 +397,7 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         [
             "Zelda",
             "Link",
-            "Sahasrahla",  # The elder you first meet after rescuing Zelda
+            "Sahasrahla", 
             "Beast Ganon",
         ],
     ),
@@ -406,10 +406,10 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         "Legend of Zelda",
         1993,
         [
-            "Zelda",  # Mentioned in Link’s dream/memory
+            "Zelda", 
             "Link",
-            "Marin",  # First person Link meets after waking up
-            "Nightmare Ganon",  # Final boss (multiple forms)
+            "Marin",  
+            "Nightmare Ganon", 
             "Gannondorf",
         ],
     ),
@@ -420,8 +420,8 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         [
             "Zelda",
             "Link",
-            "The Great Deku Tree",  # First main character you meet
-            "Ganon",  # Final boss is Ganondorf transformed into Ganon
+            "The Great Deku Tree",  
+            "Ganon",  
             "Gannondorf",
         ],
     ),
@@ -430,10 +430,10 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         "Legend of Zelda",
         2000,
         [
-            "Zelda",  # Mentioned briefly in flashback
+            "Zelda", 
             "Link",
-            "Skull Kid",  # First main character encountered
-            "Majora",  # Final boss
+            "Skull Kid", 
+            "Majora",  
         ],
     ),
     (
@@ -441,9 +441,9 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         "Legend of Zelda",
         2001,
         [
-            "Zelda",  # Appears at the end
+            "Zelda",  
             "Link",
-            "Din",  # First person Link meets after arriving in Holodrum
+            "Din",
             "Onox",
         ],
     ),
@@ -452,9 +452,9 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         "Legend of Zelda",
         2001,
         [
-            "Zelda",  # Appears at the end
+            "Zelda", 
             "Link",
-            "Nayru",  # First person Link meets in Labrynna
+            "Nayru",
             "Veran",
         ],
     ),
@@ -465,7 +465,7 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         [
             "Zelda",
             "Link",
-            "Tetra",  # Met before her true identity as Zelda is revealed
+            "Tetra", 
             "Puppet Ganondorf",
             "Gannondorf",
         ],
@@ -477,7 +477,7 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         [
             "Zelda",
             "Link",
-            "Kaepora Gaebora",  # Owl guide, appears first
+            "Kaepora Gaebora",  
             "Ganon",
             "Gannondorf",
         ],
@@ -489,7 +489,7 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         [
             "Zelda",
             "Link",
-            "Ezlo",  # First companion met after Minish transformation
+            "Ezlo", 
             "Vaati",
         ],
     ),
@@ -500,7 +500,7 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         [
             "Zelda",
             "Link",
-            "Midna",  # First companion after transformation
+            "Midna",  
             "Dark Beast Ganon",
             "Gannondorf",
         ],
@@ -512,7 +512,7 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         [
             "Zelda",
             "Link",
-            "Linebeck",  # First ally met on the new sea adventure
+            "Linebeck", 
             "Bellum",
         ],
     ),
@@ -523,7 +523,7 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         [
             "Zelda",
             "Link",
-            "Alfonzo",  # Link’s mentor, first key NPC
+            "Alfonzo", 
             "Malladus",
         ],
     ),
@@ -534,7 +534,7 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         [
             "Zelda",
             "Link",
-            "Gaepora",  # Headmaster, first important character you meet
+            "Gaepora",  
             "Demise",
         ],
     ),
@@ -545,7 +545,7 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         [
             "Zelda",
             "Link",
-            "Yuga",  # First antagonist Link encounters
+            "Yuga",  
             "Yuga Ganon",
             "Gannondorf",
         ],
@@ -556,7 +556,7 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         2015,
         [
             "Link",
-            "Madame Couture",  # First major NPC in Hytopia
+            "Madame Couture", 
             "The Lady (witch)",
         ],
     ),
@@ -567,7 +567,7 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         [
             "Zelda",
             "Link",
-            "King Rhoam",  # First person Link meets after waking up
+            "King Rhoam", 
             "Calamity Ganon",
             "Gannondorf",
         ],
@@ -579,7 +579,7 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         [
             "Zelda",
             "Link",
-            "Rauru",  # First person encountered after falling into the Depths
+            "Rauru",  
             "Demon King Ganon",
             "Gannondorf",
         ],
@@ -590,7 +590,7 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         1992,
         [
             "Kirby",
-            "King Dedede",  # main villain
+            "King Dedede", 
         ],
     ),
     (
@@ -601,7 +601,7 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
             "Kirby",
             "King Dedede",
             "Nightmare",
-            "Meta Knight",  # rival, not playable
+            "Meta Knight", 
         ],
     ),
     (
@@ -610,7 +610,7 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         1995,
         [
             "Kirby",
-            "Rick",  # second player (animal friend)
+            "Rick",  
             "Kine",
             "Coo",
             "King Dedede",
