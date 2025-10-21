@@ -380,7 +380,7 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         ],
     ),
     (
-        "The Legend of Zelda: The Adventure of Link",
+        "The Adventure of Link",
         "Legend of Zelda",
         1987,
         [
@@ -391,7 +391,7 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         ],
     ),
     (
-        "The Legend of Zelda: A Link to the Past",
+        "A Link to the Past",
         "Legend of Zelda",
         1991,
         [
@@ -402,7 +402,7 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         ],
     ),
     (
-        "The Legend of Zelda: Link’s Awakening",
+        "Link’s Awakening",
         "Legend of Zelda",
         1993,
         [
@@ -414,7 +414,7 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         ],
     ),
     (
-        "The Legend of Zelda: Ocarina of Time",
+        "Ocarina of Time",
         "Legend of Zelda",
         1998,
         [
@@ -426,7 +426,7 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         ],
     ),
     (
-        "The Legend of Zelda: Majora’s Mask",
+        "Majora’s Mask",
         "Legend of Zelda",
         2000,
         [
@@ -437,7 +437,7 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         ],
     ),
     (
-        "The Legend of Zelda: Oracle of Seasons",
+        "Oracle of Seasons",
         "Legend of Zelda",
         2001,
         [
@@ -448,7 +448,7 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         ],
     ),
     (
-        "The Legend of Zelda: Oracle of Ages",
+        "Oracle of Ages",
         "Legend of Zelda",
         2001,
         [
@@ -459,7 +459,7 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         ],
     ),
     (
-        "The Legend of Zelda: The Wind Waker",
+        "The Wind Waker",
         "Legend of Zelda",
         2002,
         [
@@ -471,7 +471,7 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         ],
     ),
     (
-        "The Legend of Zelda: Four Swords Adventures",
+        "Four Swords Adventures",
         "Legend of Zelda",
         2004,
         [
@@ -483,7 +483,7 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         ],
     ),
     (
-        "The Legend of Zelda: The Minish Cap",
+        "The Minish Cap",
         "Legend of Zelda",
         2004,
         [
@@ -494,7 +494,7 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         ],
     ),
     (
-        "The Legend of Zelda: Twilight Princess",
+        "Twilight Princess",
         "Legend of Zelda",
         2006,
         [
@@ -506,7 +506,7 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         ],
     ),
     (
-        "The Legend of Zelda: Phantom Hourglass",
+        "Phantom Hourglass",
         "Legend of Zelda",
         2007,
         [
@@ -517,7 +517,7 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         ],
     ),
     (
-        "The Legend of Zelda: Spirit Tracks",
+        "Spirit Tracks",
         "Legend of Zelda",
         2009,
         [
@@ -528,7 +528,7 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         ],
     ),
     (
-        "The Legend of Zelda: Skyward Sword",
+        "Skyward Sword",
         "Legend of Zelda",
         2011,
         [
@@ -539,7 +539,7 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         ],
     ),
     (
-        "The Legend of Zelda: A Link Between Worlds",
+        "A Link Between Worlds",
         "Legend of Zelda",
         2013,
         [
@@ -551,7 +551,7 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         ],
     ),
     (
-        "The Legend of Zelda: Tri Force Heroes",
+        "Tri Force Heroes",
         "Legend of Zelda",
         2015,
         [
@@ -561,7 +561,7 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         ],
     ),
     (
-        "The Legend of Zelda: Breath of the Wild",
+        "Breath of the Wild",
         "Legend of Zelda",
         2017,
         [
@@ -573,7 +573,7 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         ],
     ),
     (
-        "The Legend of Zelda: Tears of the Kingdom",
+        "Tears of the Kingdom",
         "Legend of Zelda",
         2023,
         [
@@ -623,7 +623,7 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         1997,
         [
             "Kirby",
-            "Gooey",  # second player in co-op
+            "Gooey", 
             "Rick",
             "Kine",
             "Coo",
@@ -641,7 +641,7 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         2000,
         [
             "Kirby",
-            "King Dedede",  # temporarily playable as second character
+            "King Dedede",  
             "Adeleine",
             "Ribbon",
             "Zero-Two",
@@ -652,7 +652,7 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         "Kirby",
         2004,
         [
-            "Kirby",  # up to 4 Kirbys (multiplayer clones)
+            "Kirby", 
             "Dark Meta Knight",
             "Dark Mind",
             "Meta Knight",
@@ -683,10 +683,10 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         2011,
         [
             "Kirby",
-            "King Dedede",  # 2nd player option
-            "Meta Knight",  # 3rd player option
-            "Bandana Waddle Dee",  # 4th player option
-            "Magolor",  # ally turned villain
+            "King Dedede", 
+            "Meta Knight",  
+            "Bandana Waddle Dee",  
+            "Magolor",  
             "Landia",
         ],
     ),
@@ -707,7 +707,7 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         2015,
         [
             "Kirby",
-            "Bandana Waddle Dee",  # 2nd player in co-op
+            "Bandana Waddle Dee",  
             "Claycia",
             "Dark Crafter",
         ],
@@ -718,9 +718,9 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         2016,
         [
             "Kirby",
-            "Susie",  # major character
-            "Star Dream",  # main villain
-            "Meta Knight",  # playable in Meta Knightmare Returns
+            "Susie",  
+            "Star Dream",  
+            "Meta Knight",  
         ],
     ),
     (
@@ -729,7 +729,7 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         2018,
         [
             "Kirby",
-            "King Dedede",  # can join as Dream Friend
+            "King Dedede",  
             "Meta Knight",
             "Bandana Waddle Dee",
             "Hyness",
@@ -742,11 +742,11 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         2022,
         [
             "Kirby",
-            "Bandana Waddle Dee",  # 2nd player co-op
+            "Bandana Waddle Dee", 
             "Elfilin",
             "King Dedede",
-            "Leongar",  # major Beast Pack leader
-            "Fecto Forgo",  # final boss / fused entity
+            "Leongar",  
+            "Fecto Forgo",
         ],
     ),
         (
@@ -754,10 +754,9 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         "Super Mario",
         1985,
         [
-            "Mario",  # playable
-            "Luigi",  # playable (in 2-player mode)
-            "Bowser",  # main villain
-            "False Bowser",  # boss (the fake Bowser at the end of worlds 1-7) :contentReference[oaicite:0]{index=0}
+            "Mario",  
+            "Luigi", 
+            "Bowser", 
         ],
     ),
     (
@@ -767,11 +766,11 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         [
             "Mario",
             "Luigi",
-            "Princess Peach",  # playable
-            "Toad",  # playable
-            "King Wart",  # main villain boss :contentReference[oaicite:1]{index=1}
-            "Birdo",  # recurring boss/boss fight :contentReference[oaicite:2]{index=2}
-            "Mouser", "Triclyde", "Fry Guy", "Clawgrip"  # bosses in various levels :contentReference[oaicite:3]{index=3}
+            "Princess Peach",  
+            "Toad",  
+            "King Wart",  
+            "Birdo",  
+            "Mouser", "Triclyde", "Fry Guy", "Clawgrip" 
         ],
     ),
     (
@@ -781,9 +780,9 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         [
             "Mario",
             "Luigi",
-            "Bowser",  # main villain
-            "The Koopalings",  # all Koopalings appearing as bosses :contentReference[oaicite:4]{index=4}
-            "Boom Boom",  # recurring boss in some fortress or sub‐boss roles :contentReference[oaicite:5]{index=5}
+            "Bowser", 
+            "The Koopalings", 
+            "Boom Boom",  
         ],
     ),
     (
@@ -794,9 +793,9 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
             "Mario",
             "Luigi",
             "Bowser",
-            "The Koopalings",  # again grouped :contentReference[oaicite:6]{index=6}
-            "Reznor",  # boss in fortresses :contentReference[oaicite:7]{index=7}
-            "Big Boo"  # boss (Big Boo’s Haunt etc.) :contentReference[oaicite:8]{index=8}
+            "The Koopalings",  
+            "Reznor",  
+            "Big Boo" 
         ],
     ),
     (
@@ -804,14 +803,14 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         "Super Mario",
         1996,
         [
-            "Mario",  # only playable
+            "Mario", 
             "Bowser",
-            "King Bob-omb",  # boss
+            "King Bob-omb", 
             "Whomp King",
             "Big Boo",
             "Big Bully",
             "Eyerok",
-            "Wiggler",  # etc. :contentReference[oaicite:9]{index=9}
+            "Wiggler", 
         ],
     ),
     (
@@ -821,7 +820,7 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
         [
             "Mario",
             "Bowser",  # main villain
-            "Bowser Jr.",  # significant boss fight (but note: not grouped among Koopalings) :contentReference[oaicite:10]{index=10}
+            "Bowser Jr.",  
             "Petey Piranha",
             "Gooper Blooper",
             "Shadow Mario",
