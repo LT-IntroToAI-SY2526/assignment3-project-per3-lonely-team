@@ -4,20 +4,20 @@ from match import match
 from typing import List, Tuple, Callable, Any
 
 # The projection functions, that give us access to certain parts of a "movie" (a tuple)
-def get_title(movie: Tuple[str, str, int, List[str]]) -> str:
-    return movie[0]
+def get_title(game: Tuple[str, str, int, List[str]]) -> str:
+    return game[0]
 
 
-def get_series(movie: Tuple[str, str, int, List[str]]) -> str:
-    return movie[1]
+def get_series(game: Tuple[str, str, int, List[str]]) -> str:
+    return game[1]
 
 
-def get_year(movie: Tuple[str, str, int, List[str]]) -> int:
-    return movie[2]
+def get_year(game: Tuple[str, str, int, List[str]]) -> int:
+    return game[2]
 
 
-def get_characters(movie: Tuple[str, str, int, List[str]]) -> List[str]:
-    return movie[3]
+def get_characters(game: Tuple[str, str, int, List[str]]) -> List[str]:
+    return game[3]
 
 
 # Below are a set of actions. Each takes a list argument and returns a list of answers
